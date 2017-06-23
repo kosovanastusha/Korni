@@ -1,5 +1,3 @@
 language: c
-script: 
-- make
-- ./bin/tests
-- gcc -Wall Korni.c -o Korni
+script: make && make test
+install: true
