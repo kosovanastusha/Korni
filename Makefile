@@ -19,4 +19,4 @@ clean:
 	@rm -rf bin/Korni.exe 
 	@echo "All files have been cleaned."	
 
--include build/*.d
+#-include build/*.d
