@@ -15,14 +15,14 @@ test:
 	make bin/Korni_test.exe 
 	bin/Korni_test.exe 
 
-bin/Korni_test.exe: build/test/main.o build/test/Korni_test.o
+bin/equation_test.exe: build/test/main.o build/test/Korni_test.o
 	@gcc $(CFLAGS) build/test/main.o build/test/Korni_test.o build/Korni.o -o bin/Korni_test.exe -lm
 	
-build/test/main.o: build/test/main.c src/Korni.h
-	@gcc $(CFLAGS) -I thirdparty -c build/test/main.c -o build/test/main.o  -lm
+build/test/main.o: test/main.c src/Korni.h
+	@gcc $(CFLAGS) -I thirdparty -c test/main.c -o build/test/main.o  -lm
 
-build/test/Korni_test.o: src/Korni.h build/test/Korni_test.c
-	@gcc $(CFlAGS) -I thirdparty -c build/test/Korni_test.c -o build/test/Korni_test.o  -lm 
+build/test/function_test.o: src/Korni.h test/Korni_test.c
+	@gcc $(CFlAGS) -I thirdparty -c test/Korni_test.c -o build/test/Korni_test.o  -lm 
 clean:
 	@echo "Cleaning files in build directory" 	
 	@rm -rf build/*.d build/*.o 
