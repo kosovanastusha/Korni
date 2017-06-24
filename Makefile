@@ -3,13 +3,13 @@ CFLAGS = -Wall -Werror -MP -MMD
 
 all: bin/Korni.exe 
 
-bin/equation.exe: build/main.o build/Korni.o 
+bin/Korni.exe: build/main.o build/Korni.o 
 	gcc $(CFLAGS) build/main.o build/Korni.o -o bin/Korni.exe -lm
 
 build/main.o: src/main.c src/Korni.h
 	gcc $(CFLAGS) -c src/main.c -o build/main.o -lm
 
-build/function.o: src/Korni.c src/Korni.h 
+build/Korni.o: src/Korni.c src/Korni.h 
 	gcc $(CFLAGS) -c src/Korni.c -o build/Korni.o -lm
 
 test: 
