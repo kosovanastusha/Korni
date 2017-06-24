@@ -12,4 +12,5 @@ int main()
 	D = b*b-4*a*c;
 	korni(a,b,c,D);
 	system("PAUSE");
+return 0;
 }
