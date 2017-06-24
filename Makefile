@@ -1,5 +1,5 @@
 .PHONY: clean all test 
-CFLAGS = -Wall -Werror -MP -MMD 
+CFLAGS = -Wall -Werror
 
 all: bin/Korni.exe 
 
