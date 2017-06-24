@@ -12,10 +12,6 @@ build/Main.o: src/Main.c src/Korni.h
 build/Korni.o: src/Korni.c src/Korni.h 
 	gcc $(CFLAGS) -c src/Korni.c -o build/Korni.o -lm
 
-#test: 
-	#make bin/Korni.exe 
-	#bin/Korni.exe
-
 clean:
 	@echo "Cleaning files in build directory" 	
 	@rm -rf build/*.d build/*.o 
