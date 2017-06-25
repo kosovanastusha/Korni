@@ -5,7 +5,7 @@
 int main()
 {
 	int i;
-	float a,b,c,D;
+	float a,b,c,x,D;
 	printf("a b c \n");
 	scanf("%f",&a);
 	scanf("%f",&b);
