@@ -38,8 +38,5 @@ if ( (a == 0) && (b == 0)) {
 			printf ("%.2f",x);
 			break;
 	}
-	return 0;
-}
-	system("PAUSE");
-return 0;
-}
+ 	return 0;
+ }
