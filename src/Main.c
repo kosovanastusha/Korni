@@ -4,6 +4,7 @@
 
 int main()
 {
+	int i;
 	float a,b,c,D;
 	printf("a b c \n");
 	scanf("%f",&a);
@@ -21,7 +22,7 @@ if ( (a == 0) && (b == 0)) {
 		return 0;
 	}
 	D = Discriment(a,b,c);
-	main = Proveryaem(D);
+	i = Proveryaem(D);
 	switch (i) {
 		case 0:
 			x = Znach (D, a, b, c, 1);
