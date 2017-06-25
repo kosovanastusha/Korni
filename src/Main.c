@@ -21,7 +21,7 @@ if ( (a == 0) && (b == 0)) {
 		printf ("%.2f",x);
 		return 0;
 	}
-	D = Discriment(a,b,c);
+	D = Dec(a,b,c);
 	i = Proveryaem(D);
 	switch (i) {
 		case 0:
