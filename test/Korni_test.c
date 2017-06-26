@@ -1,32 +1,6 @@
 #include <ctest.h>
 #include <../src/Korni.h>
 
-// Korni
-CTEST(Test_1_Korni, input_3_6_3_0)
-{
-    float result = Korni(3,6,3,0);
-	
-    float expected = -1;
-	
-    ASSERT_DBL_NEAR(expected, result);
-}
-
-CTEST(Test_2_Korni, input_4_8_4_0)
-{
-    float result = Korni(4,8,4,0);
-    
-    float expected = -1;
-    
-    ASSERT_DBL_NEAR(expected, result);
-}
-CTEST(Test_3_Korni, input_0)
-{
-    int result = Korni(0);
-	
-    int expected = 0;
-	
-    ASSERT_EQUAL(expected, result);
-}
 // Dec
 CTEST(Test_1_Dec, input_3_2_1)
 {
