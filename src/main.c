@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include "Korni.h"
 
 int main()
 {
 	int i;
 	float a,b,c,x,D;
+	printf("ax^2+bx+c=0\n");
 	printf("a b c \n");
 	scanf("%f",&a);
 	scanf("%f",&b);
