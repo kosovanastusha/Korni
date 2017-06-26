@@ -13,8 +13,7 @@ int main()
 	scanf("%f",&b);
 	scanf("%f",&c);
 	D = b*b-4*a*c;
-	korni(a,b,c,D);
-if ( (a == 0) && (b == 0)) {
+	if ( (a == 0) && (b == 0)) {
 		printf("Has no roots");
 		return 0;
 	}
