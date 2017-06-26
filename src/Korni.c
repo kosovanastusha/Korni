@@ -3,26 +3,29 @@
 #include "Korni.h"
 #include <math.h>
 
-void korni(float a, float b, float c, float D)
+int Proveryaem(float D)
 {
-	float x,x1,x2;
-	if (D==0)
-	{
-		x = -b/(2*a);
-		printf("D = %2f \n", D);
-		printf("x = %2f \n", x);
+	if (D == 0) {
+		return 0;
 	}
-	if (D<0)
-	{
-		printf("D = %2f \n", D);
-		printf("No roots");
+	if (D < 0) {
+		return 1;
 	}
-	if (D>0)
-	{
-		x1 = (-b+sqrt(D))/(2*a);
-		x2 = (-b-sqrt(D))/(2*a);
-		printf("D = %2f \n", D);
-		printf("x1 = %2f \n", x1);
-		printf("x2 = %2f \n", x2);
+	if (D > 0) {
+		return 2;
 	}
+	return 0;
+}
+
+float Dec(float a,float b, float c)
+{
+	float D = b*b - 4 * a * c;
+	return D;
+}
+
+float Znach (float D, float a, float b, float c, int i)
+{
+	float x;
+	x = ((-1)* b + sqrt(D) * i) / (2 * a);
+	return x;
 }
