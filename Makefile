@@ -6,7 +6,7 @@ all: bin/Korni.exe
 bin/Korni.exe: build/Main.o build/Korni.o 
 	gcc $(CFLAGS) build/Main.o build/Korni.o -o bin/Korni.exe -lm
 
-build/main.o: src/main.c src/Korni.h
+build/Main.o: src/main.c src/Korni.h
 	gcc $(CFLAGS) -c src/main.c -o build/Main.o -lm
 
 build/Korni.o: src/Korni.c src/Korni.h 
@@ -19,7 +19,7 @@ test:
 bin/Korni_test.exe: build/test/Main.o build/test/Korni_test.o
 	@gcc $(CFLAGS) build/test/Main.o build/test/Korni_test.o build/Korni.o -o bin/Korni_test.exe -lm
 	
-build/test/main.o: test/main.c src/Korni.h
+build/test/Main.o: test/main.c src/Korni.h
 	@gcc $(CFLAGS) -I thirdparty -c test/main.c -o build/test/Main.o  -lm
 
 build/test/Korni_test.o: src/Korni.h test/Korni_test.c
