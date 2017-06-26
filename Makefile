@@ -4,7 +4,7 @@ CFLAGS = -Wall -Werror -MP -MMD
 all: bin/Korni.exe 
 
 bin/Korni.exe: build/main.o build/Korni.o 
-	gcc $(CFLAGS) build/Main.o build/Korni.o -o bin/Korni.exe -lm
+	gcc $(CFLAGS) build/main.o build/Korni.o -o bin/Korni.exe -lm
 
 build/main.o: src/main.c src/Korni.h
 	gcc $(CFLAGS) -c src/main.c -o build/main.o -lm
